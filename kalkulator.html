@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+</head>
+
+<body>
+    <script>
+        var x = prompt("Unesite prvi broj");
+        var y = prompt("Unesite drugi broj");
+        var z = prompt("Unesite matematičku operaciju (+ - / *)");
+
+        if (z == "+") {
+            var sab = parseInt(x) + parseInt(y)
+            alert("Rezultat iznosi " + sab);
+
+        } else if (z == "-") {
+            var odu = parseInt(x) - parseInt(y)
+            alert("Rezultat iznosi " + odu);
+
+        } else if (z == "/") {
+            var delj = parseInt(x) / parseInt(y)
+            alert("Rezultat iznosi " + delj);
+
+        } else if (z == "*") {
+            var mno = parseInt(x) * parseInt(y)
+            alert("Rezultat iznosi " + mno);
+
+        } else {
+            alert("Pogrešno unet podatak");
+        }
+
+    </script>
+</body>
+
+</html>
